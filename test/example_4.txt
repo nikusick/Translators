@@ -1,0 +1,8 @@
+t!ry
+    {
+    throw new E('exception');
+    }
+catch(E exc)
+    {
+        print('hello world');
+    }

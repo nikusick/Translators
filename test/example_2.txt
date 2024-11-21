@@ -1,0 +1,25 @@
+try
+    {
+    throw new E('exception1');
+    try
+        {
+        try
+               {
+                throw new E('exception2');
+                }
+            catch(E exc)
+                {
+                    print('i wanna die');
+                }
+        }
+        throw new E('exception');
+        }
+    catch(E exc)
+        {
+            print('good bye');
+        }
+    }
+catch(E exc)
+    {
+        print('hello world');
+    }
